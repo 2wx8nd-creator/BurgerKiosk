@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblburkiosk = new Label();
+            lblAppName = new Label();
             rbGalicBurger = new RadioButton();
             rbBulBurger = new RadioButton();
             rbHamBurger = new RadioButton();
@@ -54,15 +54,15 @@
             gbCheckList.SuspendLayout();
             SuspendLayout();
             // 
-            // lblburkiosk
+            // lblAppName
             // 
-            lblburkiosk.AutoSize = true;
-            lblburkiosk.Font = new Font("맑은 고딕", 30F);
-            lblburkiosk.Location = new Point(34, 26);
-            lblburkiosk.Name = "lblburkiosk";
-            lblburkiosk.Size = new Size(371, 54);
-            lblburkiosk.TabIndex = 0;
-            lblburkiosk.Text = "버거 주문 키오스크";
+            lblAppName.AutoSize = true;
+            lblAppName.Font = new Font("맑은 고딕", 30F);
+            lblAppName.Location = new Point(34, 26);
+            lblAppName.Name = "lblAppName";
+            lblAppName.Size = new Size(371, 54);
+            lblAppName.TabIndex = 0;
+            lblAppName.Text = "버거 주문 키오스크";
             // 
             // rbGalicBurger
             // 
@@ -102,28 +102,35 @@
             rbHamBurger.TabStop = true;
             rbHamBurger.Text = "햄버거";
             rbHamBurger.UseVisualStyleBackColor = true;
+            rbHamBurger.CheckedChanged += rbHamBurger_CheckedChanged;
             // 
             // pbGalicBurger
             // 
-            pbGalicBurger.Location = new Point(174, 210);
+            pbGalicBurger.Image = global::BurgerKiosk.Properties.Resources.GB;
+            pbGalicBurger.Location = new Point(174, 216);
             pbGalicBurger.Name = "pbGalicBurger";
-            pbGalicBurger.Size = new Size(88, 59);
+            pbGalicBurger.Size = new Size(88, 69);
+            pbGalicBurger.SizeMode = PictureBoxSizeMode.StretchImage;
             pbGalicBurger.TabIndex = 2;
             pbGalicBurger.TabStop = false;
             // 
             // pbBulBurger
             // 
-            pbBulBurger.Location = new Point(174, 123);
+            pbBulBurger.Image = global::BurgerKiosk.Properties.Resources.BB;
+            pbBulBurger.Location = new Point(174, 127);
             pbBulBurger.Name = "pbBulBurger";
-            pbBulBurger.Size = new Size(88, 59);
+            pbBulBurger.Size = new Size(88, 70);
+            pbBulBurger.SizeMode = PictureBoxSizeMode.StretchImage;
             pbBulBurger.TabIndex = 1;
             pbBulBurger.TabStop = false;
             // 
             // pbHamBurger
             // 
-            pbHamBurger.Location = new Point(174, 34);
+            pbHamBurger.Image = global::BurgerKiosk.Properties.Resources.B;
+            pbHamBurger.Location = new Point(174, 42);
             pbHamBurger.Name = "pbHamBurger";
             pbHamBurger.Size = new Size(88, 59);
+            pbHamBurger.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHamBurger.TabIndex = 0;
             pbHamBurger.TabStop = false;
             // 
@@ -273,7 +280,7 @@
             Controls.Add(gbCheckList);
             Controls.Add(gbSideMenu);
             Controls.Add(gbMainMenu);
-            Controls.Add(lblburkiosk);
+            Controls.Add(lblAppName);
             Name = "BurgerKiosk";
             Text = "BurgerKiosk";
             ((System.ComponentModel.ISupportInitialize)pbGalicBurger).EndInit();
@@ -291,7 +298,7 @@
 
         #endregion
 
-        private Label lblburkiosk;
+        private Label lblAppName;
         private PictureBox pbGalicBurger;
         private PictureBox pbBulBurger;
         private PictureBox pbHamBurger;
