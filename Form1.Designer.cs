@@ -73,7 +73,6 @@
             rdoGalicBurger.Name = "rdoGalicBurger";
             rdoGalicBurger.Size = new Size(113, 29);
             rdoGalicBurger.TabIndex = 5;
-            rdoGalicBurger.TabStop = true;
             rdoGalicBurger.Text = "갈릭 버거";
             rdoGalicBurger.UseVisualStyleBackColor = true;
             // 
@@ -86,7 +85,6 @@
             rdoBulBurger.Name = "rdoBulBurger";
             rdoBulBurger.Size = new Size(132, 29);
             rdoBulBurger.TabIndex = 4;
-            rdoBulBurger.TabStop = true;
             rdoBulBurger.Text = "불고기 버거";
             rdoBulBurger.UseVisualStyleBackColor = true;
             // 
@@ -99,7 +97,6 @@
             rdoHamBurger.Name = "rdoHamBurger";
             rdoHamBurger.Size = new Size(87, 29);
             rdoHamBurger.TabIndex = 3;
-            rdoHamBurger.TabStop = true;
             rdoHamBurger.Text = "햄버거";
             rdoHamBurger.UseVisualStyleBackColor = true;
             // 
